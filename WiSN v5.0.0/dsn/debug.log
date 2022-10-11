@@ -1,0 +1,12 @@
+[0705/190115:ERROR:cache_util_win.cc(20)] Unable to move the cache: 5
+[0705/190115:ERROR:cache_util.cc(134)] Unable to move cache folder C:\ProgramData\Altium\Altium Designer {B4D311D3-7B59-478D-A8F9-D7550EF7E9AD}\BrowserCache to C:\ProgramData\Altium\Altium Designer {B4D311D3-7B59-478D-A8F9-D7550EF7E9AD}\old_BrowserCache_000
+[0705/190115:ERROR:cache_creator.cc(129)] Unable to create cache
+[0708/092355:ERROR:cache_util_win.cc(20)] Unable to move the cache: 5
+[0708/092355:ERROR:cache_util.cc(134)] Unable to move cache folder C:\ProgramData\Altium\Altium Designer {B4D311D3-7B59-478D-A8F9-D7550EF7E9AD}\BrowserCache to C:\ProgramData\Altium\Altium Designer {B4D311D3-7B59-478D-A8F9-D7550EF7E9AD}\old_BrowserCache_000
+[0708/092355:ERROR:cache_creator.cc(129)] Unable to create cache
+[0708/092615:ERROR:cache_util_win.cc(20)] Unable to move the cache: 5
+[0708/092615:ERROR:cache_util.cc(134)] Unable to move cache folder C:\ProgramData\Altium\Altium Designer {B4D311D3-7B59-478D-A8F9-D7550EF7E9AD}\BrowserCache to C:\ProgramData\Altium\Altium Designer {B4D311D3-7B59-478D-A8F9-D7550EF7E9AD}\old_BrowserCache_000
+[0708/092615:ERROR:cache_creator.cc(129)] Unable to create cache
+[0708/142245:ERROR:cache_util_win.cc(20)] Unable to move the cache: 5
+[0708/142245:ERROR:cache_util.cc(134)] Unable to move cache folder C:\ProgramData\Altium\Altium Designer {B4D311D3-7B59-478D-A8F9-D7550EF7E9AD}\BrowserCache to C:\ProgramData\Altium\Altium Designer {B4D311D3-7B59-478D-A8F9-D7550EF7E9AD}\old_BrowserCache_000
+[0708/142245:ERROR:cache_creator.cc(129)] Unable to create cache
