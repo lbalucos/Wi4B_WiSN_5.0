@@ -1,0 +1,3 @@
+Layer Pairs Export File for PCB: D:\lab_ws\prj\wi4b\wicl\design\WiCL v1.0\dsn\doc2_pcb\WiCL.PcbDoc
+LayersSetName=Top_Bot_Thru_Holes|DrillFile=wicl_v1.0-roundholes.txt|DrillLayers=gtl,g1,g2,gbl
+LayersSetName=Top_Bot_Slot_Holes|DrillFile=wicl_v1.0-slotholes.txt|DrillLayers=gtl,g1,g2,gbl
