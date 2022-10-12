@@ -1,0 +1,270 @@
+Removed Pin From Net: NetName=NetC601_1 Pin=U201-1
+Removed Pin From Net: NetName=GPS_RST_L Pin=U201-4
+Removed Pin From Net: NetName=GPS_TIMEMARK Pin=U201-5
+Removed Pin From Net: NetName=NetC603_1 Pin=U201-6
+Removed Pin From Net: NetName=NetC28_1 Pin=U201-7
+Removed Pin From Net: NetName=RXD0 Pin=U201-13
+Removed Pin From Net: NetName=GND Pin=U201-18
+Removed Pin From Net: NetName=LSW_EN Pin=U201-20
+Removed Pin From Net: NetName=JENNIC_RESET_L Pin=U201-22
+Removed Pin From Net: NetName=JENIC_TXD1 Pin=U201-23
+Removed Pin From Net: NetName=JENIC_RXD1 Pin=U201-24
+Removed Pin From Net: NetName=I2C_JENIC_SCLK Pin=U201-25
+Removed Pin From Net: NetName=I2C_JENIC_SDA Pin=U201-26
+Removed Member From Class: ClassName=Core Module Member=U201
+Change Footprint: Footprint Not Found C0402
+Change Footprint: Footprint Not Found C0402
+Change Footprint: Footprint Not Found C0402
+Change Footprint: Footprint Not Found C0402
+Change Footprint: Footprint Not Found C0402
+Change Footprint: Footprint Not Found C0402
+Change Footprint: Footprint Not Found C0402
+Change Footprint: Footprint Not Found C0402
+Change Footprint: Footprint Not Found C0402
+Change Footprint: Footprint Not Found C0402
+Change Footprint: Footprint Not Found CAPC1005X55N
+Change Footprint: Footprint Not Found CAPC1005X55N
+Change Footprint: Footprint Not Found CAPC1005X55N
+Change Footprint: Footprint Not Found CAPC1005X55N
+Change Footprint: Footprint Not Found CAPC1005X55N
+Change Footprint: Footprint Not Found CAPC1005X55N
+Change Footprint: Footprint Not Found CAPC1005X55N
+Change Footprint: Footprint Not Found INDC1005X45N
+Change Footprint: Footprint Not Found INDC1005X45N
+Change Footprint: Footprint Not Found INDC1005X45N
+Change Footprint: Footprint Not Found INDC1005X45N
+Change Footprint: Footprint Not Found R0402
+Change Footprint: Footprint Not Found RESC1005X40N
+Change Footprint: Footprint Not Found RESC1005X40N
+Change Footprint: Footprint Not Found RESC1005X40N
+Change Footprint: Footprint Not Found CAPC2012X135N
+Change Footprint: Footprint Not Found QFN50P600X600X100-41N
+Change Footprint: Footprint Not Found QFN40P300X400X90-25N-D
+Change Footprint: Footprint Not Found SOT65P210X110-5N
+Change Footprint: Footprint Not Found SOT65P210X110-5N
+Change Footprint: Footprint Not Found OSCCC320X250X80L75X100N
+Add Component: Footprint Not Found CAPC1005X55N
+Added Pin To Net: NetName=GND Pin=C9-1
+Added Pin To Net: NetName=GND Pin=C10-1
+Added Pin To Net: NetName=GND Pin=C11-2
+Added Pin To Net: NetName=GND Pin=C14-1
+Added Pin To Net: NetName=GND Pin=C21-1
+Added Pin To Net: NetName=GND Pin=C22-1
+Added Pin To Net: NetName=GND Pin=C23-1
+Added Pin To Net: NetName=GND Pin=C24-2
+Added Pin To Net: NetName=GND Pin=C31-1
+Added Pin To Net: NetName=GND Pin=C33-2
+Added Pin To Net: NetName=GND Pin=C39-1
+Added Pin To Net: NetName=GND Pin=C40-2
+Added Pin To Net: NetName=GND Pin=C41-2
+Added Pin To Net: NetName=GND Pin=C42-2
+Added Pin To Net: NetName=GND Pin=C43-2
+Added Pin To Net: NetName=GND Pin=C44-2
+Add Pin To Net: Unknown Pin: Pin C45-1
+Added Pin To Net: NetName=GND Pin=J1-2
+Added Pin To Net: NetName=GND Pin=J1-2
+Added Pin To Net: NetName=NetC601_1 Pin=Jennic pinout-1
+Added Pin To Net: NetName=GPS_RST_L Pin=Jennic pinout-4
+Added Pin To Net: NetName=GPS_TIMEMARK Pin=Jennic pinout-5
+Added Pin To Net: NetName=NetC603_1 Pin=Jennic pinout-6
+Added Pin To Net: NetName=NetC28_1 Pin=Jennic pinout-7
+Added Pin To Net: NetName=RXD0 Pin=Jennic pinout-13
+Added Pin To Net: NetName=GND Pin=Jennic pinout-18
+Added Pin To Net: NetName=LSW_EN Pin=Jennic pinout-20
+Added Pin To Net: NetName=JENNIC_RESET_L Pin=Jennic pinout-22
+Added Pin To Net: NetName=JENIC_TXD1 Pin=Jennic pinout-23
+Added Pin To Net: NetName=JENIC_RXD1 Pin=Jennic pinout-24
+Added Pin To Net: NetName=I2C_JENIC_SCLK Pin=Jennic pinout-25
+Added Pin To Net: NetName=I2C_JENIC_SDA Pin=Jennic pinout-26
+Added Pin To Net: NetName=GND Pin=L5-2
+Added Pin To Net: NetName=GND Pin=R11-1
+Added Pin To Net: NetName=GND Pin=SH1-1
+Added Pin To Net: NetName=GND Pin=SH1-1
+Added Pin To Net: NetName=GND Pin=SH1-1
+Added Pin To Net: NetName=GND Pin=SH1-1
+Added Pin To Net: NetName=GND Pin=SH1-1
+Added Pin To Net: NetName=GND Pin=SH1-1
+Added Pin To Net: NetName=GND Pin=SH1-1
+Added Pin To Net: NetName=GND Pin=SH1-1
+Added Pin To Net: NetName=GND Pin=U3-3
+Added Pin To Net: NetName=GND Pin=U4-9
+Added Pin To Net: NetName=GND Pin=U4-10
+Added Pin To Net: NetName=GND Pin=U4-11
+Added Pin To Net: NetName=GND Pin=U4-12
+Added Pin To Net: NetName=GND Pin=U4-14
+Added Pin To Net: NetName=GND Pin=U4-16
+Added Pin To Net: NetName=GND Pin=U4-18
+Added Pin To Net: NetName=GND Pin=U4-25
+Added Pin To Net: NetName=GND Pin=U4-25
+Added Pin To Net: NetName=GND Pin=U4-25
+Added Pin To Net: NetName=GND Pin=U4-25
+Added Pin To Net: NetName=I2C_JENIC_SCLK Pin=U5-1
+Added Pin To Net: NetName=I2C_JENIC_SDA Pin=U5-2
+Added Pin To Net: NetName=JENNIC_RESET_L Pin=U5-3
+Added Pin To Net: NetName=NetC601_1 Pin=U5-15
+Added Pin To Net: NetName=NetC603_1 Pin=U5-16
+Added Pin To Net: NetName=NetC28_1 Pin=U5-17
+Added Pin To Net: NetName=GND Pin=U5-21
+Added Pin To Net: NetName=GPS_RST_L Pin=U5-23
+Added Pin To Net: NetName=GPS_TIMEMARK Pin=U5-24
+Added Pin To Net: NetName=RXD0 Pin=U5-29
+Added Pin To Net: NetName=LSW_EN Pin=U5-36
+Added Pin To Net: NetName=JENIC_TXD1 Pin=U5-38
+Added Pin To Net: NetName=GND Pin=U5-39
+Added Pin To Net: NetName=JENIC_RXD1 Pin=U5-40
+Added Pin To Net: NetName=GND Pin=U5-41
+Added Pin To Net: NetName=GND Pin=U5-41
+Added Pin To Net: NetName=GND Pin=U5-41
+Added Pin To Net: NetName=GND Pin=U5-41
+Added Pin To Net: NetName=GND Pin=U11-3
+Added Pin To Net: NetName=GND Pin=Y2-2
+Added Pin To Net: NetName=GND Pin=Y2-4
+Change Net Name : Old Net Name=JENNIC_RESET_L New Net Name=RESETN
+Change Net Name : Old Net Name=NetC28_1 New Net Name=DIO1
+Change Net Name : Old Net Name=NetC601_1 New Net Name=ADC1
+Change Net Name : Old Net Name=NetC603_1 New Net Name=DIO0
+Change Net Name : Old Net Name=RXD0 New Net Name=DIO7
+Added Pin To Net: NetName=ADC2 Pin=Jennic pinout-27
+Added Pin To Net: NetName=ADC2 Pin=U5-11
+Added Net: Name=ADC2
+Added Pin To Net: NetName=ANT1 Pin=C31-2
+Added Pin To Net: NetName=ANT1 Pin=L6-2
+Added Pin To Net: NetName=ANT1 Pin=U4-15
+Added Net: Name=ANT1
+Added Pin To Net: NetName=BOUT Pin=R20-1
+Added Pin To Net: NetName=BOUT Pin=R21-1
+Added Pin To Net: NetName=BOUT Pin=U4-23
+Added Net: Name=BOUT
+Added Pin To Net: NetName=CPS Pin=U3-4
+Added Pin To Net: NetName=CPS Pin=U4-21
+Added Net: Name=CPS
+Added Pin To Net: NetName=CSD Pin=U4-20
+Added Pin To Net: NetName=CSD Pin=U11-4
+Added Net: Name=CSD
+Added Pin To Net: NetName=DIO2 Pin=Jennic pinout-8
+Added Pin To Net: NetName=DIO2 Pin=U5-18
+Added Pin To Net: NetName=DIO2 Pin=U11-1
+Added Net: Name=DIO2
+Added Pin To Net: NetName=DIO3 Pin=Jennic pinout-9
+Added Pin To Net: NetName=DIO3 Pin=U3-2
+Added Pin To Net: NetName=DIO3 Pin=U4-24
+Added Pin To Net: NetName=DIO3 Pin=U5-19
+Added Pin To Net: NetName=DIO3 Pin=U11-2
+Added Net: Name=DIO3
+Added Pin To Net: NetName=DIO4 Pin=Jennic pinout-10
+Added Pin To Net: NetName=DIO4 Pin=Q4-1
+Added Pin To Net: NetName=DIO4 Pin=R1777-2
+Added Pin To Net: NetName=DIO4 Pin=U5-26
+Added Net: Name=DIO4
+Added Pin To Net: NetName=DIO5 Pin=Jennic pinout-11
+Added Pin To Net: NetName=DIO5 Pin=U1-2
+Added Pin To Net: NetName=DIO5 Pin=U5-27
+Added Net: Name=DIO5
+Added Pin To Net: NetName=DIO6 Pin=J3-3
+Added Pin To Net: NetName=DIO6 Pin=Jennic pinout-12
+Added Pin To Net: NetName=DIO6 Pin=U5-28
+Added Pin To Net: NetName=DIO6 Pin=U9-2
+Added Net: Name=DIO6
+Added Pin To Net: NetName=DIO8 Pin=Jennic pinout-14
+Added Pin To Net: NetName=DIO8 Pin=R50-2
+Added Pin To Net: NetName=DIO8 Pin=U5-31
+Added Net: Name=DIO8
+Added Pin To Net: NetName=DIO9 Pin=Jennic pinout-15
+Added Pin To Net: NetName=DIO9 Pin=R105-2
+Added Pin To Net: NetName=DIO9 Pin=U5-32
+Added Net: Name=DIO9
+Added Pin To Net: NetName=DIO10 Pin=Jennic pinout-16
+Added Pin To Net: NetName=DIO10 Pin=R1-2
+Added Pin To Net: NetName=DIO10 Pin=U5-33
+Added Net: Name=DIO10
+Added Pin To Net: NetName=DIO11 Pin=Jennic pinout-19
+Added Pin To Net: NetName=DIO11 Pin=R108-1
+Added Pin To Net: NetName=DIO11 Pin=U5-34
+Added Net: Name=DIO11
+Added Pin To Net: NetName=DIO13 Pin=Jennic pinout-21
+Added Pin To Net: NetName=DIO13 Pin=R19-1
+Added Pin To Net: NetName=DIO13 Pin=U5-37
+Added Net: Name=DIO13
+Added Pin To Net: NetName=IBIAS Pin=R11-2
+Added Pin To Net: NetName=IBIAS Pin=U5-10
+Added Net: Name=IBIAS
+Added Pin To Net: NetName=LNA_BYPASS Pin=R14-1
+Added Pin To Net: NetName=LNA_BYPASS Pin=U3-1
+Added Net: Name=LNA_BYPASS
+Added Pin To Net: NetName=NetC30_2 Pin=C30-2
+Added Pin To Net: NetName=NetC30_2 Pin=L5-1
+Added Pin To Net: NetName=NetC30_2 Pin=U4-6
+Added Net: Name=NetC30_2
+Added Pin To Net: NetName=NetC33_1 Pin=C33-1
+Added Pin To Net: NetName=NetC33_1 Pin=U5-4
+Added Pin To Net: NetName=NetC33_1 Pin=Y2-1
+Added Net: Name=NetC33_1
+Added Pin To Net: NetName=NetC40_1 Pin=C40-1
+Added Pin To Net: NetName=NetC40_1 Pin=U5-5
+Added Pin To Net: NetName=NetC40_1 Pin=Y2-3
+Added Net: Name=NetC40_1
+Added Pin To Net: NetName=NetR20_2 Pin=R20-2
+Added Pin To Net: NetName=NetR20_2 Pin=U4-1
+Added Net: Name=NetR20_2
+Added Pin To Net: NetName=NetR21_2 Pin=R21-2
+Added Pin To Net: NetName=NetR21_2 Pin=U4-2
+Added Net: Name=NetR21_2
+Added Pin To Net: NetName=RF_IO Pin=C25-2
+Added Pin To Net: NetName=RF_IO Pin=L3-2
+Added Pin To Net: NetName=RF_IO Pin=U5-13
+Added Net: Name=RF_IO
+Added Pin To Net: NetName=RF_PORT_L Pin=C25-1
+Added Pin To Net: NetName=RF_PORT_L Pin=L4-1
+Added Net: Name=RF_PORT_L
+Added Pin To Net: NetName=RF_PORT Pin=C30-1
+Added Pin To Net: NetName=RF_PORT Pin=C41-1
+Added Pin To Net: NetName=RF_PORT Pin=L4-2
+Added Net: Name=RF_PORT
+Added Pin To Net: NetName=SPICLK Pin=J4-2
+Added Pin To Net: NetName=SPICLK Pin=Jennic pinout-2
+Added Pin To Net: NetName=SPICLK Pin=U5-20
+Added Net: Name=SPICLK
+Added Pin To Net: NetName=SPIMISO Pin=J3-7
+Added Pin To Net: NetName=SPIMISO Pin=Jennic pinout-3
+Added Pin To Net: NetName=SPIMISO Pin=U5-22
+Added Net: Name=SPIMISO
+Added Pin To Net: NetName=UFL_ANT Pin=J1-1
+Added Pin To Net: NetName=UFL_ANT Pin=L6-1
+Added Net: Name=UFL_ANT
+Added Pin To Net: NetName=VB_DIG Pin=C9-2
+Added Pin To Net: NetName=VB_DIG Pin=U5-35
+Added Net: Name=VB_DIG
+Added Pin To Net: NetName=VB_RAM Pin=C22-2
+Added Pin To Net: NetName=VB_RAM Pin=U5-25
+Added Net: Name=VB_RAM
+Added Pin To Net: NetName=VB_RF Pin=C23-2
+Added Pin To Net: NetName=VB_RF Pin=C24-1
+Added Pin To Net: NetName=VB_RF Pin=L3-1
+Added Pin To Net: NetName=VB_RF Pin=U5-12
+Added Pin To Net: NetName=VB_RF Pin=U5-14
+Added Net: Name=VB_RF
+Added Pin To Net: NetName=VB_SYNTH Pin=C10-2
+Added Pin To Net: NetName=VB_SYNTH Pin=U5-6
+Added Net: Name=VB_SYNTH
+Added Pin To Net: NetName=VB_VCO Pin=C14-2
+Added Pin To Net: NetName=VB_VCO Pin=U5-8
+Added Net: Name=VB_VCO
+Added Pin To Net: NetName=VDD Pin=C11-1
+Added Pin To Net: NetName=VDD Pin=C21-2
+Added Pin To Net: NetName=VDD Pin=C39-2
+Added Pin To Net: NetName=VDD Pin=C42-1
+Added Pin To Net: NetName=VDD Pin=C43-1
+Added Pin To Net: NetName=VDD Pin=C44-1
+Added Pin To Net: NetName=VDD Pin=C202-1
+Added Pin To Net: NetName=VDD Pin=Jennic pinout-17
+Added Pin To Net: NetName=VDD Pin=L201-1
+Added Pin To Net: NetName=VDD Pin=R14-2
+Added Pin To Net: NetName=VDD Pin=U3-5
+Added Pin To Net: NetName=VDD Pin=U4-5
+Added Pin To Net: NetName=VDD Pin=U4-19
+Added Pin To Net: NetName=VDD Pin=U4-22
+Added Pin To Net: NetName=VDD Pin=U5-9
+Added Pin To Net: NetName=VDD Pin=U5-30
+Added Pin To Net: NetName=VDD Pin=U11-5
+Added Net: Name=VDD
+Added Class: Name=Module_blk
