@@ -1,0 +1,2 @@
+Removed Pin From Net: NetName=DIO2 Pin=Jennic pinout-8
+Added Pin To Net: NetName=LNA_BYPASS Pin=Jennic pinout-8

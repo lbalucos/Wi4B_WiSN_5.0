@@ -1,0 +1,10 @@
+Output: Generates pick and place files
+Type  : Pick Place
+From  : PCB Document [WiCL.PcbDoc]
+   Generated File[wicl_v1.0.txt]
+
+
+Files Generated   : 1
+Documents Printed : 0
+
+Finished Output Generation At 3:22:37 PM On 10/28/2020

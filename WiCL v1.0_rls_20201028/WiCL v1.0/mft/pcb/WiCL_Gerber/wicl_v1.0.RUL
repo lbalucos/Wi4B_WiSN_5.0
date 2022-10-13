@@ -1,0 +1,12 @@
+DRC Rules Export File for PCB: D:\lab_ws\prj\wi4b\wicl\design\WiCL v1.0\dsn\doc2_pcb\WiCL.PcbDoc
+RuleKind=Clearance|RuleName=Clearance_NET|Scope=Board|Minimum=8.00
+RuleKind=Clearance|RuleName=Clearance_Module_blk|Scope=Board|Minimum=5.90
+RuleKind=Clearance|RuleName=Clearance_U14|Scope=Board|Minimum=7.87
+RuleKind=SolderMaskExpansion|RuleName=SolderMaskExpansion_VIA|Scope=Board|Minimum=-10.00
+RuleKind=SolderMaskExpansion|RuleName=SolderMaskExpansion|Scope=Board|Minimum=4.00
+RuleKind=Width|RuleName=50ohms|Scope=Board|Minimum=8.00
+RuleKind=Clearance|RuleName=Clearance|Scope=Board|Minimum=7.87
+RuleKind=ShortCircuit|RuleName=ShortCircuit|Scope=Board|Allowed=0
+RuleKind=Width|RuleName=Default|Scope=Board|Minimum=5.00
+RuleKind=Width|RuleName=Power|Scope=Board|Minimum=10.00
+RuleKind=Clearance|RuleName=Clearance_NetC25_2|Scope=Board|Minimum=6.00
