@@ -389,6 +389,10 @@ Variation43=Designator=P106|UniqueId=\RMRASDXG|Kind=1|AlternatePart=
 Variation44=Designator=P104|UniqueId=\BEMDERFH|Kind=1|AlternatePart= 
 ParamVariationCount=0
 
+[GeneratedDocument1]
+DocumentPath=Project Outputs for WiSN\Design Rule Check - WiSN.html
+DItemRevisionGUID=
+
 [SearchPath1]
 Path=*.*
 IncludeSubFolders=1

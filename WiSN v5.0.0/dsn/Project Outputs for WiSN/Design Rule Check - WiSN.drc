@@ -1,0 +1,57 @@
+Protel Design System Design Rule Check
+PCB File : C:\Users\LBalucos\Documents\GitHub\Wi4B_WiSN_5.0\WiSN v5.0.0\dsn\brd\WiSN.PcbDoc
+Date     : 10/15/2022
+Time     : 9:19:09 PM
+
+Processing Rule : Clearance Constraint (Gap=80mil) (InNetClass('HI-Voltage-Line')or InNetClass('HI-Voltage-Neutral')or InNetClass('HI-Voltage-IO')),(InNetClass('low_voltage')or InNetClass('Power'))
+Rule Violations :0
+
+Processing Rule : Clearance Constraint (Gap=6mil) (All),(All)
+   Violation between Clearance Constraint: (Collision < 6mil) Between Arc (-17mil,1081mil) on Keep-Out Layer And Track (-175.358mil,1065mil)(14.642mil,1255mil) on GND 
+   Violation between Clearance Constraint: (5.973mil < 6mil) Between Pad L3-2(-942.643mil,-938.379mil) on Top Layer And Track (-933.601mil,-915.044mil)(-922.81mil,-915.044mil) on Top Layer 
+   Violation between Clearance Constraint: (5.973mil < 6mil) Between Pad L3-2(-942.643mil,-938.379mil) on Top Layer And Track (-941.705mil,-906.941mil)(-933.601mil,-915.044mil) on Top Layer 
+   Violation between Clearance Constraint: (5.906mil < 6mil) Between Pad U14-3(175.165mil,-1426.11mil) on Top Layer And Pad U14-4(200.756mil,-1426.11mil) on Top Layer 
+   Violation between Clearance Constraint: (5.906mil < 6mil) Between Pad U14-5(200.756mil,-1189.89mil) on Top Layer And Pad U14-6(175.165mil,-1189.89mil) on Top Layer 
+   Violation between Clearance Constraint: (5.906mil < 6mil) Between Pad U14-6(175.165mil,-1189.89mil) on Top Layer And Pad U14-7(149.575mil,-1189.89mil) on Top Layer 
+   Violation between Clearance Constraint: (5.906mil < 6mil) Between Pad U14-7(149.575mil,-1189.89mil) on Top Layer And Pad U14-8(123.984mil,-1189.89mil) on Top Layer 
+   Violation between Clearance Constraint: (5.609mil < 6mil) Between Track (-532.147mil,-768.853mil)(-311mil,-990mil) on Bottom Layer And Via (-314mil,-960.684mil) from Top Layer to Bottom Layer 
+   Violation between Clearance Constraint: (5.908mil < 6mil) Between Track (-706.196mil,-1046.8mil)(-687.589mil,-1046.8mil) on Top Layer And Via (-695.899mil,-1065.7mil) from Top Layer to Bottom Layer 
+Rule Violations :9
+
+Processing Rule : Clearance Constraint (Gap=66.929mil) (InNet('LINE_OUT')),(All)
+   Violation between Clearance Constraint: (65.642mil < 66.929mil) Between Pad P100-LOAD(-342.52mil,0mil) on Multi-Layer And Pad R18-1(-380.121mil,169.121mil) on Top Layer 
+   Violation between Clearance Constraint: (64.534mil < 66.929mil) Between Pad P100-LOAD(-342.52mil,0mil) on Multi-Layer And Track (-274mil,215mil)(-170.579mil,111.579mil) on Top Layer 
+Rule Violations :2
+
+Processing Rule : Clearance Constraint (Gap=10mil) (InNamedPolygon('LINE_IN_L01_P008')),(All)
+Rule Violations :0
+
+Processing Rule : Short-Circuit Constraint (Allowed=No) (All),(All)
+Rule Violations :0
+
+Processing Rule : Un-Routed Net Constraint ( (All) )
+Rule Violations :0
+
+Processing Rule : Width Constraint (Min=5.9mil) (Max=100mil) (Preferred=8mil) (InNetClass('All Nets'))
+Rule Violations :0
+
+Processing Rule : Width Constraint (Min=12mil) (Max=100mil) (Preferred=15mil) (InNetClass('Power') or InNetClass('HI-Voltage-Line') or InNetClass('HI-Voltage-Neutral'))
+Rule Violations :0
+
+Processing Rule : Width Constraint (Min=5mil) (Max=14mil) (Preferred=14mil) (InNetClass('RF'))
+Rule Violations :0
+
+Processing Rule : Power Plane Connect Rule(Relief Connect )(Expansion=20mil) (Conductor Width=10mil) (Air Gap=10mil) (Entries=4) (All)
+Rule Violations :0
+
+Processing Rule : Hole Size Constraint (Min=1mil) (Max=1600mil) (All)
+Rule Violations :0
+
+Processing Rule : Height Constraint (Min=0mil) (Max=1000mil) (Prefered=500mil) (All)
+   Violation between Height Constraint: Small Component V101-S20K300E2 (517.118mil,-46.15mil) on Top Layer Actual Height = 1003.937mil
+Rule Violations :1
+
+
+Violations Detected : 12
+Waived Violations : 0
+Time Elapsed        : 00:00:01

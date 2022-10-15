@@ -1,0 +1,368 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<style type="text/css">
+		h1, h2, h3, h4, h5, h6 {
+			font-family : segoe ui;
+			color : black;
+			background-color : #EDE7D9;
+			padding: 0.3em;
+		}
+
+		h1 {
+			font-size: 1.2em;
+		}		
+
+		h2 {
+			font-size: 1.2em;
+		}
+
+		body {
+			font-family : segoe ui;
+		}
+
+		td, th {
+			padding: 0.5em;
+			text-align : left;
+			width: 10em;
+		}
+		th {
+			background-color : #EEEEEE;
+
+		}
+		th.column1, td.column1 {
+			text-align: left;
+			width : auto;
+		}
+		table {
+			width : 100%;
+			font-size: 0.9em;
+		}
+
+		.DRC_summary_header {
+			padding-bottom : 0.1em;
+			border : 0px solid black;
+			width: 100%;
+			align: left;
+		}
+
+		.DRC_summary_header_col1,
+		.DRC_summary_header_col2, 
+		.DRC_summary_header_col3 {
+			color : black;
+			font-size:100%;
+			padding : 0em;
+			padding-top : 0.2em;
+			padding-bottom 0.2em;
+			border : 0px solid black;
+			vertical-align: top;
+			text-align: left;
+		}
+
+		.DRC_summary_header_col1 {
+			font-weight: bold;
+			width: 9em;
+		}
+
+		.DRC_summary_header_col2 {
+			width: 0.1em;
+		
+		}
+
+		.DRC_summary_header_col3 {
+			width : auto;
+		}
+
+		.header_holder {
+		    Width = 100%;
+		    border = 0px solid green;
+		    padding = 0;
+		}
+
+
+		.front_matter, .front_matter_column1, .front_matter_column2, .front_matter_column3
+		{
+			left : 0;
+			top : 0;
+			padding: 0em;
+			padding-top : 0.1em;
+			border : 0px solid black;
+			width : 100%;
+			vertical-align: top;
+			text-align: left;
+		}
+
+		.front_matter_column1 {
+			width : 8em;
+			font-weight: bold;
+		}
+
+		.front_matter_column2 {
+			width: 0.1em;
+		}
+
+		.front_matter_column3 {
+			width : auto;
+		}
+
+		.total_column1, .total_column {
+			font-weight : bold;
+		}
+		.total_column1 {
+			text-align : left;
+		}
+		.warning, .error {
+			color : red;
+			font-weight : bold;
+		}
+		tr.onmouseout_odd {
+			background-color : #white;
+		}
+		tr.onmouseout_even { 
+			background-color : #FAFAFA;
+		}
+		tr.onmouseover_odd, tr.onmouseover_even { 
+			background-color : #EEEEEE;
+		} 
+		a:link, a:visited, .q a:link,.q a:active,.q {
+			color: #21489e; 
+		}
+		a:link.callback, a:visited.callback { 
+			color: #21489e;
+		}
+		a:link.customize, a:visited.customize {
+			color: #C0C0C0;
+			position: absolute; 
+			right: 10px;
+		}	
+		p.contents_level1 {
+			font-weight : bold;
+			font-size : 110%;
+			margin : 0.5em;
+		}
+		p.contents_level2 {
+			position : relative;
+			left : 20px;
+			margin : 0.5em;
+		}
+	</style><script type="text/javascript">
+		function coordToMils(coord) {
+			var number = coord / 10000;
+			
+			if (number != number.toFixed(3))
+				number = number.toFixed(3);
+
+			return number + 'mil'
+		}
+
+		function coordToMM(coord) {
+			var number = 0.0254 * coord / 10000;
+			
+			if (number != number.toFixed(4))
+				number = number.toFixed(4);
+			
+			return number + 'mm'
+		}
+	
+		function convertCoord(coordNode, units) {
+			for (var i = 0; i < coordNode.childNodes.length; i++) {
+				coordNode.removeChild(coordNode.childNodes[i]);
+			}
+
+			var coord = coordNode.getAttribute('value');
+			if (coord != null) {
+				if (units == 'mm') {
+					textNode = document.createTextNode(coordToMM(coord));
+					coordNode.appendChild(textNode);
+				} else if (units == 'mil') {
+					textNode = document.createTextNode(coordToMils(coord));		
+					coordNode.appendChild(textNode);	
+				}
+			}
+		}
+	
+		function convertUnits(unitNode, units) {
+			for (var i = 0; i < unitNode.childNodes.length; i++) {
+				unitNode.removeChild(unitNode.childNodes[i]);		
+			}
+		
+			textNode = document.createTextNode(units); 
+			unitNode.appendChild(textNode);
+		}
+	
+		function changeUnits(radio_input, units) {
+			if (radio_input.checked) {
+			
+				var elements = document.getElementsByName('coordinate');
+				if (elements) {
+					for (var i = 0; i < elements.length; i++) {
+						convertCoord(elements[i], units);
+					}
+				}
+	
+				var elements = document.getElementsByName('units');
+				if (elements) {
+					for (var i = 0; i < elements.length; i++) {
+						convertUnits(elements[i], units);
+					}
+				}
+			}
+		}
+	</script><title>Design Rule Verification Report</title>
+</head>
+<body onload=""><img ALT="Altium" src="
+			file://C:\Users\Public\Documents\Altium\AD22\Templates\AD_logo.png
+		"><h1>Design Rule Verification Report</h1>
+<table class="header_holder">
+<td class="column1">
+<table class="front_matter">
+<tr class="front_matter">
+<td class="front_matter_column1">Date:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3">10/15/2022</td>
+</tr>
+<tr class="front_matter">
+<td class="front_matter_column1">Time:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3">9:19:09 PM</td>
+</tr>
+<tr class="front_matter">
+<td class="front_matter_column1">Elapsed Time:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3">00:00:01</td>
+</tr>
+<tr class="front_matter">
+<td class="front_matter_column1">Filename:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3"><a href="file:///C:\Users\LBalucos\Documents\GitHub\Wi4B_WiSN_5.0\WiSN v5.0.0\dsn\brd\WiSN.PcbDoc" class="file"><acronym title="C:\Users\LBalucos\Documents\GitHub\Wi4B_WiSN_5.0\WiSN v5.0.0\dsn\brd\WiSN.PcbDoc">C:\Users\LBalucos\Documents\GitHub\Wi4B_WiSN_5.0\WiSN v5.0.0\dsn\brd\WiSN.PcbDoc</acronym></a></td>
+</tr>
+</table>
+</td>
+<td class="column2">
+<table class="DRC_summary_header">
+<tr>
+<td class="DRC_summary_header_col1">Warnings:</td>
+<td class="DRC_summary_header_col2"></td>
+<td class="DRC_summary_header_col3">0</td></tr>
+<tr>
+<td class="DRC_summary_header_col1">Rule Violations:</td>
+<td class="DRC_summary_header_col2"></td>
+<td class="DRC_summary_header_col3" style="color : red">12</td></tr>
+</table>
+</td>
+</table><a name="IDLAHP42NJZUKQF33O15H4RAFSQMLUHILPZTYDWNBETUTI1E1BS4KP"><h2>Summary</h2></a><table>
+<tr>
+<th class="column1">Warnings</th>
+<th class="column2">Count</th>
+</tr>
+<tr>
+<td style="font-weight : bold; text-align : right" class="column1">Total</td>
+<td style="font-weight : bold" class="column2">0</td>
+</tr>
+</table><br><table>
+<tr>
+<th class="column1">Rule Violations</th>
+<th class="column2">Count</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDOR1HVKN4WJKLI2Y1SOFBHFAV0FMR0AMRTLHOWWGG5IFGQ2H2JMED">Clearance Constraint (Gap=80mil) (InNetClass('HI-Voltage-Line')or InNetClass('HI-Voltage-Neutral')or InNetClass('HI-Voltage-IO')),(InNetClass('low_voltage')or InNetClass('Power'))</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDUW34OF5M2HF1CYJI0KCUXTQ2BB3UYSLETRXAWXEYAGMC5WXKZAUD">Clearance Constraint (Gap=6mil) (All),(All)</a></td>
+<td class="column2">9</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDGH4SKA5JPIK4DN0XSQUIQ52RMHQKSLJJOJBEVCP5PFACKPFJEGLD">Clearance Constraint (Gap=66.929mil) (InNet('LINE_OUT')),(All)</a></td>
+<td class="column2">2</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDAJHWINWVKI44CWMCO1TNML11TF5Q5DUIDRFI2HKSCS40E5F4QXQC">Clearance Constraint (Gap=10mil) (InNamedPolygon('LINE_IN_L01_P008')),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#ID1IQI45VLLDIJCPNSXZ30CPAW4LNDX5NHK0WHLQKPX1QJYKMYEUML">Short-Circuit Constraint (Allowed=No) (All),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDEWNTPVFDFU00NNZ4XYZHXJLV0I15UGAGNWTB3XOWXHXQWNLC5DAN">Un-Routed Net Constraint ( (All) )</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDQQAHKJS1K3VTM3PRG0A43BD05GZJ4PZCJLQFJWLWZUV0Z4V3VGZP">Width Constraint (Min=5.9mil) (Max=100mil) (Preferred=8mil) (InNetClass('All Nets'))</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDFDT5TE2QKZOHKR1HDCBOLVJYVHEAMPW00FAJY4K5LPPTCXXTI4SO">Width Constraint (Min=12mil) (Max=100mil) (Preferred=15mil) (InNetClass('Power') or InNetClass('HI-Voltage-Line') or InNetClass('HI-Voltage-Neutral'))</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#ID3OO3Q5IMESDDB1Z25XIINMC3PCCGQKIBSM13S4K3P1T4W023EBTD">Width Constraint (Min=5mil) (Max=14mil) (Preferred=14mil) (InNetClass('RF'))</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDOCHNOZRY4HJ1CTQQZ3KNJUCYYJQWNG5URLBQ32NUI2R4HBK4KZAB">Power Plane Connect Rule(Relief Connect )(Expansion=20mil) (Conductor Width=10mil) (Air Gap=10mil) (Entries=4) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDLRDBDN5OLPBZMPJNF4Q0X1C5FKDBYHXIHWGIDHOMIQ4O2RUYQRB">Hole Size Constraint (Min=1mil) (Max=1600mil) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDEPQZRPRGVJEKHXRFKRVCKOKAVKCML3R4UOK21AJPDKUUV4FESIWJ">Height Constraint (Min=0mil) (Max=1000mil) (Prefered=500mil) (All)</a></td>
+<td class="column2">1</td>
+</tr>
+<tr>
+<td style="font-weight : bold; text-align : right" class="column1">Total</td>
+<td style="font-weight : bold" class="column2">12</td>
+</tr>
+</table><br><a name="IDUW34OF5M2HF1CYJI0KCUXTQ2BB3UYSLETRXAWXEYAGMC5WXKZAUD"><table>
+<tr>
+<th style="text-align : left" colspan="1" class="rule">Clearance Constraint (Gap=6mil) (All),(All)</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\LBalucos\Documents\GitHub\Wi4B_WiSN_5.0\WiSN v5.0.0\dsn\brd\WiSN.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=10586.838mil|Location2.X=10591.838mil|Location1.Y=4557.971mil|Location2.Y=4562.971mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\LBalucos\Documents\GitHub\Wi4B_WiSN_5.0\WiSN v5.0.0\dsn\brd\WiSN.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=10586.838mil|Location2.X=10591.838mil|Location1.Y=4557.971mil|Location2.Y=4562.971mil|Absolute=True">Clearance Constraint: (Collision &lt; 6mil) Between Arc (-17mil,1081mil) on Keep-Out Layer And Track (-175.358mil,1065mil)(14.642mil,1255mil) on GND </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\LBalucos\Documents\GitHub\Wi4B_WiSN_5.0\WiSN v5.0.0\dsn\brd\WiSN.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9733.118mil|Location2.X=9741.174mil|Location1.Y=2484.878mil|Location2.Y=2492.863mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\LBalucos\Documents\GitHub\Wi4B_WiSN_5.0\WiSN v5.0.0\dsn\brd\WiSN.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9733.118mil|Location2.X=9741.174mil|Location1.Y=2484.878mil|Location2.Y=2492.863mil|Absolute=True">Clearance Constraint: (5.973mil &lt; 6mil) Between Pad L3-2(-942.643mil,-938.379mil) on Top Layer And Track (-933.601mil,-915.044mil)(-922.81mil,-915.044mil) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\LBalucos\Documents\GitHub\Wi4B_WiSN_5.0\WiSN v5.0.0\dsn\brd\WiSN.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9733.118mil|Location2.X=9741.174mil|Location1.Y=2484.878mil|Location2.Y=2492.863mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\LBalucos\Documents\GitHub\Wi4B_WiSN_5.0\WiSN v5.0.0\dsn\brd\WiSN.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9733.118mil|Location2.X=9741.174mil|Location1.Y=2484.878mil|Location2.Y=2492.863mil|Absolute=True">Clearance Constraint: (5.973mil &lt; 6mil) Between Pad L3-2(-942.643mil,-938.379mil) on Top Layer And Track (-941.705mil,-906.941mil)(-933.601mil,-915.044mil) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\LBalucos\Documents\GitHub\Wi4B_WiSN_5.0\WiSN v5.0.0\dsn\brd\WiSN.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=10860.271mil|Location2.X=10867.521mil|Location1.Y=2009.863mil|Location2.Y=2017.113mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\LBalucos\Documents\GitHub\Wi4B_WiSN_5.0\WiSN v5.0.0\dsn\brd\WiSN.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=10860.271mil|Location2.X=10867.521mil|Location1.Y=2009.863mil|Location2.Y=2017.113mil|Absolute=True">Clearance Constraint: (5.906mil &lt; 6mil) Between Pad U14-3(175.165mil,-1426.11mil) on Top Layer And Pad U14-4(200.756mil,-1426.11mil) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\LBalucos\Documents\GitHub\Wi4B_WiSN_5.0\WiSN v5.0.0\dsn\brd\WiSN.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=10860.271mil|Location2.X=10867.521mil|Location1.Y=2186.635mil|Location2.Y=2193.885mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\LBalucos\Documents\GitHub\Wi4B_WiSN_5.0\WiSN v5.0.0\dsn\brd\WiSN.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=10860.271mil|Location2.X=10867.521mil|Location1.Y=2186.635mil|Location2.Y=2193.885mil|Absolute=True">Clearance Constraint: (5.906mil &lt; 6mil) Between Pad U14-5(200.756mil,-1189.89mil) on Top Layer And Pad U14-6(175.165mil,-1189.89mil) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\LBalucos\Documents\GitHub\Wi4B_WiSN_5.0\WiSN v5.0.0\dsn\brd\WiSN.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=10834.681mil|Location2.X=10841.931mil|Location1.Y=2186.635mil|Location2.Y=2193.885mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\LBalucos\Documents\GitHub\Wi4B_WiSN_5.0\WiSN v5.0.0\dsn\brd\WiSN.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=10834.681mil|Location2.X=10841.931mil|Location1.Y=2186.635mil|Location2.Y=2193.885mil|Absolute=True">Clearance Constraint: (5.906mil &lt; 6mil) Between Pad U14-6(175.165mil,-1189.89mil) on Top Layer And Pad U14-7(149.575mil,-1189.89mil) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\LBalucos\Documents\GitHub\Wi4B_WiSN_5.0\WiSN v5.0.0\dsn\brd\WiSN.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=10809.09mil|Location2.X=10816.34mil|Location1.Y=2186.635mil|Location2.Y=2193.885mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\LBalucos\Documents\GitHub\Wi4B_WiSN_5.0\WiSN v5.0.0\dsn\brd\WiSN.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=10809.09mil|Location2.X=10816.34mil|Location1.Y=2186.635mil|Location2.Y=2193.885mil|Absolute=True">Clearance Constraint: (5.906mil &lt; 6mil) Between Pad U14-7(149.575mil,-1189.89mil) on Top Layer And Pad U14-8(123.984mil,-1189.89mil) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\LBalucos\Documents\GitHub\Wi4B_WiSN_5.0\WiSN v5.0.0\dsn\brd\WiSN.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=10349.257mil|Location2.X=10357.312mil|Location1.Y=2435.776mil|Location2.Y=2443.761mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\LBalucos\Documents\GitHub\Wi4B_WiSN_5.0\WiSN v5.0.0\dsn\brd\WiSN.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=10349.257mil|Location2.X=10357.312mil|Location1.Y=2435.776mil|Location2.Y=2443.761mil|Absolute=True">Clearance Constraint: (5.609mil &lt; 6mil) Between Track (-532.147mil,-768.853mil)(-311mil,-990mil) on Bottom Layer And Via (-314mil,-960.684mil) from Top Layer to Bottom Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\LBalucos\Documents\GitHub\Wi4B_WiSN_5.0\WiSN v5.0.0\dsn\brd\WiSN.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9976.412mil|Location2.X=9983.662mil|Location1.Y=2353.542mil|Location2.Y=2360.792mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\LBalucos\Documents\GitHub\Wi4B_WiSN_5.0\WiSN v5.0.0\dsn\brd\WiSN.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9976.412mil|Location2.X=9983.662mil|Location1.Y=2353.542mil|Location2.Y=2360.792mil|Absolute=True">Clearance Constraint: (5.908mil &lt; 6mil) Between Track (-706.196mil,-1046.8mil)(-687.589mil,-1046.8mil) on Top Layer And Via (-695.899mil,-1065.7mil) from Top Layer to Bottom Layer </acronym></a><br></td>
+</tr>
+</table></a><hr color="#EEEEEE"><a href="#top" style="font-size: 0.9em">Back to top</a><br><br><a name="IDGH4SKA5JPIK4DN0XSQUIQ52RMHQKSLJJOJBEVCP5PFACKPFJEGLD"><table>
+<tr>
+<th style="text-align : left" colspan="1" class="rule">Clearance Constraint (Gap=66.929mil) (InNet('LINE_OUT')),(All)</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\LBalucos\Documents\GitHub\Wi4B_WiSN_5.0\WiSN v5.0.0\dsn\brd\WiSN.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=10269.866mil|Location2.X=10343.849mil|Location1.Y=3490.839mil|Location2.Y=3559.018mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\LBalucos\Documents\GitHub\Wi4B_WiSN_5.0\WiSN v5.0.0\dsn\brd\WiSN.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=10269.866mil|Location2.X=10343.849mil|Location1.Y=3490.839mil|Location2.Y=3559.018mil|Absolute=True">Clearance Constraint: (65.642mil &lt; 66.929mil) Between Pad P100-LOAD(-342.52mil,0mil) on Multi-Layer And Pad R18-1(-380.121mil,169.121mil) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\LBalucos\Documents\GitHub\Wi4B_WiSN_5.0\WiSN v5.0.0\dsn\brd\WiSN.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=10382.915mil|Location2.X=10451.094mil|Location1.Y=3459.373mil|Location2.Y=3527.552mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\LBalucos\Documents\GitHub\Wi4B_WiSN_5.0\WiSN v5.0.0\dsn\brd\WiSN.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=10382.915mil|Location2.X=10451.094mil|Location1.Y=3459.373mil|Location2.Y=3527.552mil|Absolute=True">Clearance Constraint: (64.534mil &lt; 66.929mil) Between Pad P100-LOAD(-342.52mil,0mil) on Multi-Layer And Track (-274mil,215mil)(-170.579mil,111.579mil) on Top Layer </acronym></a><br></td>
+</tr>
+</table></a><hr color="#EEEEEE"><a href="#top" style="font-size: 0.9em">Back to top</a><br><br><a name="IDEPQZRPRGVJEKHXRFKRVCKOKAVKCML3R4UOK21AJPDKUUV4FESIWJ"><table>
+<tr>
+<th style="text-align : left" colspan="1" class="rule">Height Constraint (Min=0mil) (Max=1000mil) (Prefered=500mil) (All)</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\LBalucos\Documents\GitHub\Wi4B_WiSN_5.0\WiSN v5.0.0\dsn\brd\WiSN.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=11192.053mil|Location2.X=11194.053mil|Location1.Y=3362.724mil|Location2.Y=3364.724mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\LBalucos\Documents\GitHub\Wi4B_WiSN_5.0\WiSN v5.0.0\dsn\brd\WiSN.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=11192.053mil|Location2.X=11194.053mil|Location1.Y=3362.724mil|Location2.Y=3364.724mil|Absolute=True">Height Constraint: Small Component V101-S20K300E2 (517.118mil,-46.15mil) on Top Layer Actual Height = 1003.937mil</acronym></a><br></td>
+</tr>
+</table></a><hr color="#EEEEEE"><a href="#top" style="font-size: 0.9em">Back to top</a><br><br></body>
+</html>
