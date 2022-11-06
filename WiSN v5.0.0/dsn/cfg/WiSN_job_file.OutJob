@@ -64,7 +64,7 @@ OutputEnabled1_OutputMedium10=0
 OutputDefault1=0
 PageOptions1=Record=PageOptions|CenterHorizontal=True|CenterVertical=True|PrintScale=1.00|XCorrection=1.00|YCorrection=1.00|PrintKind=0|BorderSize=5000000|LeftOffset=0|BottomOffset=0|Orientation=2|PaperLength=1000|PaperWidth=1000|Scale=100|PaperSource=7|PrintQuality=-3|MediaType=1|DitherType=10|PrintScaleMode=1|PaperKind=Letter|PaperIndex=1
 Configuration1_Name1=OutputConfigurationParameter1
-Configuration1_Item1=Record=SchPrintView|ShowNoERC=True|ShowParamSet=True|ShowProbe=True|ShowBlanket=True|NoERCSymbolsToShow="Thin Cross","Thick Cross","Small Cross",Checkbox,Triangle|ShowNote=True|ShowNoteCollapsed=True|ExpandDesignator=True|ExpandNetLabel=False|ExpandPort=False|ExpandSheetNum=False|ExpandDocNum=False|PrintArea=0|PrintAreaRect.X1=0|PrintAreaRect.Y1=0|PrintAreaRect.X2=0|PrintAreaRect.Y2=0
+Configuration1_Item1=Record=SchPrintView|ShowNoERC=True|ShowParamSet=True|ShowProbe=True|ShowBlanket=True|NoERCSymbolsToShow="Thin Cross","Thick Cross","Small Cross",Checkbox,Triangle|ShowNote=True|ShowNoteCollapsed=True|ExpandDesignator=True|ExpandNetLabel=False|ExpandPort=False|ExpandSheetNum=False|ExpandDocNum=False|PrintArea=0|PrintAreaRect.X1=0|PrintAreaRect.Y1=0|PrintAreaRect.X2=0|PrintAreaRect.Y2=0|DocumentPath=All SCH Documents
 OutputType2=PCB 3D Print
 OutputName2=PCB 3D Print Top
 OutputCategory2=Documentation
@@ -448,7 +448,7 @@ Configuration15_Item4=CArc=Full|CFill=Full|Comment=Full|Coordinate=Full|CPad=Ful
 PcbPrintPreferences15=
 
 [PublishSettings]
-OutputFilePath1=C:\Users\Lorence\Documents\GitHub\Wi4B-WiSN-v4.3.0\wip\WiSN v4.3.0\pdf\wisn_v4.3.0.pdf
+OutputFilePath1=C:\Users\LBalucos\Documents\GitHub\Wi4B_WiSN_5.0\WiSN v5.0.0\pdf\wisn_v5.0.0.pdf
 ReleaseManaged1=0
 OutputBasePath1=..\pdf\
 OutputPathMedia1=
@@ -471,7 +471,7 @@ MarkPins1=1
 MarkNetLabels1=1
 MarkPortsId1=1
 GenerateTOC1=1
-ShowComponentParameters1=0
+ShowComponentParameters1=1
 GlobalBookmarks1=0
 PDFACompliance1=Disabled
 PDFVersion1=Default
@@ -675,7 +675,7 @@ WmvVideoCodecName9=Windows Media Video V7
 WmvQuality9=80
 
 [GeneratedFilesSettings]
-RelativeOutputPath1=C:\Users\Lorence\Documents\GitHub\Wi4B-WiSN-v4.3.0\wip\WiSN v4.3.0\pdf\wisn_v4.3.0.pdf
+RelativeOutputPath1=C:\Users\LBalucos\Documents\GitHub\Wi4B_WiSN_5.0\WiSN v5.0.0\pdf\wisn_v5.0.0.pdf
 OpenOutputs1=1
 RelativeOutputPath2=C:\Users\Lorence\Documents\GitHub\Wi4B-WiSN-v4.3.0\wip\WiSN v4.3.0\mech\3D wisn_v4.3.0.pdf
 OpenOutputs2=1
